@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/267448ee0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"><h2>Boundless Ink Studio</h2></a>
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./testimonial.html">TESTIMONIAL</a></li>
+              <li><a href="./Artist.html">TATTOO ARTIST</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li class="active"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var menuitem = document.getElementById("menuitem");
+      menuitem.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "250px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <section class="contect-section">
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-flex">
+          <div class="contact-info">
+            <p>Visit us at:</p>
+            <address>
+              123 Tattoo Street,<br />
+              Art City, AC 12345
+            </address>
+
+            <p>
+              Email us at:
+              <a href="mailto:info@boundlessinkstudio.com"
+                >info@boundlessinkstudio.com</a
+              >
+            </p>
+
+            <p>Call us at: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+          </div>
+
+          <div class="location-image">
+            <img src="./image/h.png" alt="Boundless Ink Studio Location" />
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1708862816235!5m2!1sen!2sin"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer>
+      <div class="more">
+        <div class="logo">
+          <a href="./index.html"> <h2>Boundless Ink Stundio</h2></a>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Artist.html">Our Artists</a></li>
+            <li><a href="./testimonial.html">Testimonials</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <p class="legal">
+        Copyright (c) 2024 Copyright Holder All Rights Reserved |<i
+          class="fa fa-heart"
+        ></i>
+        <a href=""><span> Boundless Ink Studio</span></a>
+      </p>
+    </footer>
+  </body>
+</html>
