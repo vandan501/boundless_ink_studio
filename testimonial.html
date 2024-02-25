@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/267448ee0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"><h2>Boundless Ink Studio</h2></a>
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li><a href="./index.html">HOME</a></li>
+              <li class="active">
+                <a href="./testimonial.html">TESTIMONIAL</a>
+              </li>
+              <li><a href="./Artist.html">TATTOO ARTIST</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var menuitem = document.getElementById("menuitem");
+      menuitem.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "250px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <section class="customer">
+      <div class="container">
+        <h2>What Says Our Client</h2>
+        <div class="items-grid grid">
+          <div class="box">
+            <div class="para">
+              <p>
+                I can't express how thrilled I am with the incredible artwork I
+                received at Boundless Ink Studio. The attention to detail and
+                creativity of the artists surpassed my expectations. The
+                studio's welcoming atmosphere and the professionalism of the
+                staff made the entire experience unforgettable. My tattoo is not
+                just ink on skin; it's a masterpiece that reflects my
+                personality. I highly recommend Boundless Ink Studio to anyone
+                looking for a unique and exceptional tattooing experience.
+              </p>
+            </div>
+            <div class="image flex">
+              <div class="img">
+                <img src="image/c1.jpg" />
+              </div>
+              <div class="text">
+                <h3>Emily</h3>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="para">
+              <p>
+                Boundless Ink Studio is a true gem in the tattoo world. From the
+                moment I walked in, I felt a sense of warmth and creativity. The
+                artists are not only incredibly talented but also dedicated to
+                understanding the client's vision. The entire process, from
+                consultation to the final result, was seamless. I'm beyond
+                satisfied with the intricate details and precision in my tattoo.
+                It's more than just body art; it's a symbol of self-expression.
+                I can't thank the team at Boundless Ink Studio enough for making
+                my tattoo dreams a reality
+              </p>
+            </div>
+            <div class="image flex">
+              <div class="img">
+                <img src="image/c2.jpg" />
+              </div>
+              <div class="text">
+                <h3>Alex Ander</h3>
+                <p>Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="para">
+              <p>
+                Boundless Ink Studio exceeded all my expectations. The artists'
+                passion for their craft is evident in every stroke. They took my
+                vague idea and turned it into a stunning piece of art. The
+                atmosphere is both welcoming and professional, making the entire
+                experience enjoyable. My tattoo is not just ink; it's a
+                representation of my journey, and I couldn't be happier with the
+                result.
+              </p>
+            </div>
+            <div class="image flex">
+              <div class="img">
+                <img
+                  src="https://images.pexels.com/photos/15274205/pexels-photo-15274205/free-photo-of-woman-showing-tattoo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
+              </div>
+              <div class="text">
+                <h3>Sophia R.</h3>
+                <p>Happy Client</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="para">
+              <p>
+                I can't praise Boundless Ink Studio enough! The artists not only
+                showcased their incredible talent but also made the entire
+                process enjoyable. The attention to detail and commitment to
+                creating something meaningful truly sets this studio apart. From
+                the initial consultation to the final reveal, every step was
+                handled with care. My tattoo is not just a piece of art; it's a
+                reflection of my personality, and I'm grateful to the amazing
+                team at Boundless Ink Studio for bringing my vision to life.
+              </p>
+            </div>
+            <div class="image flex">
+              <div class="img">
+                <img src="image/c3.jpg" />
+              </div>
+              <div class="text">
+                <h3>Nathan K.</h3>
+                <p>Satisfied Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="more">
+        <div class="logo">
+          <a href="./index.html"> <h2>Boundless Ink Stundio</h2></a>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Artist.html">Our Artists</a></li>
+            <li><a href="./testimonial.html">Testimonials</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <p class="legal">
+        Copyright (c) 2024 Copyright Holder All Rights Reserved |<i
+          class="fa fa-heart"
+        ></i>
+        <a href=""><span> Boundless Ink Studio</span></a>
+      </p>
+    </footer>
+  </body>
+</html>

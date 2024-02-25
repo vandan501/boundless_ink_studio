@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Artists</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/267448ee0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: white;
+      }
+      .artist-section {
+        height: min-content;
+        margin-top: 50px;
+      }
+      h1 {
+        color: black;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 32px;
+        font-weight: 200;
+      }
+      .our-artists {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        flex-wrap: wrap;
+      }
+      .artist-card {
+        width: 350px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2%;
+      }
+
+      .artist-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .artist-details {
+        padding: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+      }
+
+      .artist-name {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .contact-details {
+        margin-bottom: 15px;
+      }
+
+      .artist-work {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+      }
+      .artist-work img {
+        width: 150px;
+        height: 150px;
+        transform: rotate(20deg);
+      }
+      .artist-social-media {
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .artist-social-media i {
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+      .artist-social-media i:hover {
+        color: red;
+      }
+
+      .gallery-section {
+        /* width: 100%; */
+        height: min-content;
+        margin-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .gallery-section h2 {
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px;
+      }
+      .card {
+        color: white;
+        width: 350px;
+        height: 300px;
+      }
+
+      .cards {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"><h2>Boundless Ink Studio</h2></a>
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li><a href="./index.html">HOME</a></li>
+              <li>
+                <a href="./testimonial.html">TESTIMONIAL</a>
+              </li>
+              <li class="active"><a href="./Artist.html">TATTOO ARTIST</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var menuitem = document.getElementById("menuitem");
+      menuitem.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "250px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    <section class="artist-section">
+      <h1>Our Tattoo Artists</h1>
+      <div class="our-artists">
+        <div class="artist-card">
+          <img
+            class="artist-image"
+            src="https://images.pexels.com/photos/3657562/pexels-photo-3657562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Artist 1"
+          />
+          <div class="artist-social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="artist-details">
+            <div class="artist-name">John Doe</div>
+            <div class="contact-details">Contact: john@example.com</div>
+            <div class="contact-details">Phone: +1 555-1234</div>
+            <div class="artist-work">
+              <img src="./image/i7.jpg" alt="Tattoo 1" />
+              <img src="./image/i8.jpg" alt="Tattoo 2" />
+              <img src="./image/i9.jpg" alt="Tattoo 3" />
+            </div>
+          </div>
+        </div>
+        <div class="artist-card">
+          <img
+            class="artist-image"
+            src="https://images.pexels.com/photos/1803878/pexels-photo-1803878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Artist 2"
+          />
+          <div class="artist-social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+
+          <div class="artist-details">
+            <div class="artist-name">Maria Geller</div>
+            <div class="contact-details">Contact:mariageller@example.com</div>
+            <div class="contact-details">Phone: +1 465-5115</div>
+            <div class="artist-work">
+              <img src="./image/i5.jpeg" alt="Tattoo 1" />
+              <img src="./image/i4.jpeg" alt="Tattoo 2" />
+              <img src="./image/i6.jpeg" alt="Tattoo 3" />
+            </div>
+          </div>
+        </div>
+        <div class="artist-card">
+          <img
+            class="artist-image"
+            src="https://images.pexels.com/photos/1803880/pexels-photo-1803880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Artist 3"
+          />
+          <div class="artist-social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+
+          <div class="artist-details">
+            <div class="artist-name">Narayan Khalifa</div>
+            <div class="contact-details">Contact: narayan@acc.com</div>
+            <div class="contact-details">Phone: +91 6544435435</div>
+            <div class="artist-work">
+              <img src="./image/i3.jpeg" alt="Tattoo 1" />
+              <img src="./image/i2.jpeg" alt="Tattoo 2" />
+              <img src="./image/i4.jpeg" alt="Tattoo 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Our Tattoo Gallery</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/6039207/pexels-photo-6039207.jpeg?cs=srgb&dl=pexels-enric-cruz-l%C3%B3pez-6039207.jpg&fm=jpg&_gl=1*1natnbo*_ga*MTU4ODgxODA3NC4xNzA2MDk2MTkx*_ga_8JE65Q40S6*MTcwODg1MjkzMy4zMS4xLjE3MDg4NTc1MzcuMC4wLjA."
+            alt=""
+          />
+        </div>
+        <div class="card"><img src="./image/d2 (1).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (3).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (6).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (2).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (4).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (5).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d2 (7).jpg" alt="" /></div>
+        <div class="card"><img src="./image/d1.jpg" alt="" /></div>
+        <div class="card"><img src="./image/i4.jpeg" alt="" /></div>
+        <div class="card"><img src="./image/i5.jpeg" alt="" /></div>
+        <div class="card"><img src="./image/i3.jpeg" alt="" /></div>
+      </div>
+    </section>
+    <footer>
+      <div class="more">
+        <div class="logo">
+          <a href="./index.html"> <h2>Boundless Ink Stundio</h2></a>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Artist.html">Our Artists</a></li>
+            <li><a href="./testimonial.html">Testimonials</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <p class="legal">
+        Copyright (c) 2024 Copyright Holder All Rights Reserved |<i
+          class="fa fa-heart"
+        ></i>
+        <a href=""><span> Boundless Ink Studio</span></a>
+      </p>
+    </footer>
+  </body>
+</html>
