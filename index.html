@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boundless Ink Studio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/267448ee0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"><h2>Boundless Ink Studio</h2></a>
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li class="active"><a href="./index.html">HOME</a></li>
+              <li><a href="./testimonial.html">TESTIMONIAL</a></li>
+              <li><a href="./Artist.html">TATTOO ARTIST</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var menuitem = document.getElementById("menuitem");
+      menuitem.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "200px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <section class="hero-sec">
+      <div class="left">
+        <h2>Where Art and Skin Collide, Boundless Beauty Resides</h2>
+        <p>
+          Step into Boundless Ink Studio, where we turn moments into permanent
+          memories. Our skilled artists are here to guide you on a journey of
+          self-expression, creating tattoos that tell your story and celebrate
+          your uniqueness. Welcome to a space where art and emotion merge
+          seamlessly.
+        </p>
+        <button>Read More</button>
+      </div>
+      <div class="right">
+        <video
+          src="./image/h.mp4"
+          muted
+          autoplay
+          loop
+          class="welcome-video"
+        ></video>
+      </div>
+    </section>
+
+    <section class="display-galarry">
+      <div class="content">
+        <h2>Explore our work</h2>
+        <p>
+          Our studio is a sanctuary of creativity, where skilled artists breathe
+          life into your stories, passions, and dreams through the art of ink.
+          Explore a world where each tattoo is a masterpiece, uniquely tailored
+          to express your individuality.
+        </p>
+      </div>
+      <div class="gallery">
+        <img src="./image/i1.jpg" alt="" />
+        <img src="./image/i2.jpeg" alt="" />
+        <img src="./image/i3.jpeg" alt="" />
+        <img src="./image/i4.jpeg" alt="" />
+        <img src="./image/i5.jpeg" alt="" />
+        <img src="./image/i6.jpeg" alt="" />
+        <img
+          src="./image/i7.jpg
+          "
+          alt=""
+        />
+        <img src="./image/i8.jpg" alt="" />
+        <img src="./image/i9.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="more">
+        <div class="logo">
+          <a href="./index.html"> <h2>Boundless Ink Stundio</h2></a>
+        </div>
+        <div class="pages">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Artist.html">Our Artists</a></li>
+            <li><a href="./testimonial.html">Testimonials</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <p class="legal">
+        Copyright (c) 2024 Copyright Holder All Rights Reserved |<i
+          class="fa fa-heart"
+        ></i>
+        <a href=""><span> Boundless Ink Studio</span></a>
+      </p>
+    </footer>
+  </body>
+</html>
