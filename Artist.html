@@ -61,7 +61,7 @@
 
       .artist-details {
         padding: 20px;
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,10 +88,21 @@
         gap: 10px;
       }
       .artist-work img {
-        width: 150px;
+        width: 100px;
         height: 150px;
-        transform: rotate(20deg);
+        transform: rotate(10deg);
       }
+
+      @media screen and (max-width: 767px) {
+    .cards {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+        justify-items: center; /* Center items horizontally */
+    }
+    .card{
+      width: 200px;
+      height: 150px;
+    }
+}
       .artist-social-media {
         display: flex;
         margin-top: 15px;
@@ -185,11 +196,7 @@
             src="https://images.pexels.com/photos/3657562/pexels-photo-3657562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Artist 1"
           />
-          <div class="artist-social-media">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
+
           <div class="artist-details">
             <div class="artist-name">Sandeep Yadav</div>
             <div class="contact-details">sandeepyadav123@gmail.com</div>
@@ -207,11 +214,6 @@
             src="https://images.pexels.com/photos/1803878/pexels-photo-1803878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Artist 2"
           />
-          <div class="artist-social-media">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
 
           <div class="artist-details">
             <div class="artist-name">Shivam Parikh</div>
@@ -230,11 +232,6 @@
             src="https://images.pexels.com/photos/1803880/pexels-photo-1803880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Artist 3"
           />
-          <div class="artist-social-media">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
 
           <div class="artist-details">
             <div class="artist-name">Utsav Rathod</div>
